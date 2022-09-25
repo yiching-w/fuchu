@@ -254,7 +254,7 @@
             });
 
             $(document).on('click', '.control_item_btns .delBtn', function () {
-                let tbody = $(this).closest('.control_month_btns').siblings('.table-responsive').find('table tbody');
+                let tbody = $(this).closest('.control_item_btns').siblings('.table-responsive').find('table tbody');
                 $(tbody).find('tr:last').remove();
             });
 
