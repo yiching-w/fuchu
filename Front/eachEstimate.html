@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>系統類型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/eachEstimate.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="details.html" class="main-btn mb-5" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回輸入資訊項目</a>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <table id="demo" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2"></th>
+                            <th rowspan="2" colspan="7"
+                                style="text-align: center;vertical-align: middle;font-size: 1.5rem;color: #996633;">
+                                窩百態系統家具 系統家具總估價單</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>V.1110112</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">屋主名稱:</td>
+                            <td></td>
+                            <td>報價類別:</td>
+                            <td colspan="3"></td>
+                            <td>報價日期:</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">連絡電話:</td>
+                            <td></td>
+                            <td>設計師:</td>
+                            <td colspan="3"></td>
+                            <td>設計師助理:</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">房屋案名:</td>
+                            <td></td>
+                            <td>設計師電話:</td>
+                            <td colspan="3"></td>
+                            <td>助理電話:</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">工地地址</td>
+                            <td colspan="8"></td>
+                        </tr>
+                        <tr style="background-color: #ca7a43; text-align: center; color: #fff;">
+                            <td colspan="3">區域</td>
+                            <td colspan="7"></td>
+                        </tr>
+                        <tr class="text-center" style="background-color: #645c54; color: #fff;">
+                            <td colspan="10">一.品項部材(基本工及物料)</td>
+                        </tr>
+                        <tr class="text-center titleCol">
+                            <td style="width: 6%;">項次</td>
+                            <td style="width: 10%;">配置</td>
+                            <td style="width: 18%;">施作項目</td>
+                            <td style="width: 15%;">說明及規格</td>
+                            <td style="width: 8%;">單價</td>
+                            <td style="width: 6%;">數量</td>
+                            <td style="width: 6%;">單位</td>
+                            <td style="width: 12%;">備註</td>
+                            <td style="width: 6%;">選擇</td>
+                            <td style="width: 13%;">小計</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td colspan="7">各區域系統家具牌價小計</td>
+                            <td colspan="3" style="background-color: #645c54; color: #fff;">0</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td colspan="7">
+                                <select name="" id="">
+                                    <option value="各區域系統家具牌價總計">各區域系統家具牌價總計</option>
+                                </select>
+                            </td>
+                            <td colspan="3" style="background-color: #645c54;color: #fff;">0</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td colspan="10">窩百態室內裝修設計股份有限公司 / 電話:(04)24362988 / 傳真:(04)24370382</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="#" class="main-btn mt-2 mx-auto" style="width: fit-content;">轉成Excel</a>
+    </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let temp = '';
+        for (var i = 1; i <= 30; i++) {
+            temp += `
+            <tr class="text-center">
+                <td style="width: 6%;">${i}</td>
+                <td style="width: 10%;"></td>
+                <td style="width: 18%;"></td>
+                <td style="width: 15%;"></td>
+                <td style="width: 8%;"></td>
+                <td style="width: 6%;"></td>
+                <td style="width: 6%;"></td>
+                <td style="width: 12%;"></td>
+                <td style="width: 6%;"></td>
+                <td style="width: 13%;"></td>
+            </tr>`;
+        }
+        $('.titleCol').after(temp);
+    </script>
+</body>
+
+</html>

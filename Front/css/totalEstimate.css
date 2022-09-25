@@ -1,0 +1,13 @@
+table {
+    background-color: #f2f2f2 !important;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee0e1;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee0e1;
+}

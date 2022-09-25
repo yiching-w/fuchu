@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>系統類型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/photo.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="choose.html" class="main-btn mb-2" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回新增估價單</a>
+        <div class="row">
+            <div class="col-6 my-4">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">1. 區域項目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option>玄關</option>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                    </select>
+                                </td>
+                                <td><button class="chooseBtn">選擇</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="7">2. 櫃體選擇</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅">A1-玄關收納座椅</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅"></option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅"></option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅">A1-玄關收納座椅</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅"></option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="A1-玄關收納座椅"></option>
+                                    </select>
+                                </td>
+                                <td><button class="chooseBtn">選擇</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="photoArea">
+                    <img src="https://mobileimages.lowes.com/productimages/f712b722-7d80-401e-834e-981dd8182d74/00632080.jpg?size=xl"
+                        alt="" width="40%">
+                </div>
+            </div>
+        </div>
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(document).on('focus', '.input', function () {
+                    $('tr').removeClass('active');
+                    $(this).closest('tr').addClass('active')
+                })
+                $(document).on('focusout', '.input', function () {
+                    $('tr').removeClass('active');
+                })
+            })
+        </script>
+</body>
+
+</html>

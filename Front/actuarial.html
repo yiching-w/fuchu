@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>系統類型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/actuarial.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="choose.html" class="main-btn mb-5" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回系統選擇</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_card">
+                    <div class="form_title">版本</div>
+                    <div class="form_content">
+                        <select class="form-control">
+                            <option>版本選擇</option>
+                            <option>2021/12</option>
+                            <option>2021/11</option>
+                            <option>2021/10</option>
+                        </select>
+                        <div><button class="main-btn">選擇</button></div>
+                    </div>
+                </div>
+                <div class="form_card">
+                    <div class="form_title">新增</div>
+                    <label for="create_estimate">新估價單號碼：</label>
+                    <div class="form_content">
+                        <input class="form-control" type="text" id="create_estimate" placeholder="新估價單號碼" value="">
+                        <a><a href="estimate.html" class="main-btn">新增</button></a>
+                    </div>
+                </div>
+                <div class="form_card">
+                    <div class="form_title">選擇</div>
+                    <label for="choose_estimate">估價單號碼：</label>
+                    <div class="form_content">
+                        <input class="form-control" type="text" id="choose_estimate" placeholder="估價單號碼" value="">
+                        <div><button class="main-btn">選擇</button></div>
+                    </div>
+                </div>
+                <div class="form_card">
+                    <div class="form_title">刪除</div>
+                    <label for="del_estimate">估價單號碼：</label>
+                    <div class="form_content">
+                        <input class="form-control" type="text" id="del_estimate" placeholder="估價單號碼" value="">
+                        <div><button class="main-btn">刪除</button></div>
+                    </div>
+                </div>
+                <div class="form_card">
+                    <div class="form_title">複製</div>
+                    <label for="copyfrom_estimate">欲複製的估價單號碼：</label>
+                    <div class="form_content mb-3">
+                        <input class="form-control" type="text" id="copyfrom_estimate" placeholder="欲複製的估價單號碼" value="">
+                    </div>
+                    <label for="copyto_estimate">新估價單號碼：</label>
+                    <div class="form_content">
+                        <input class="form-control" type="text" id="copyto_estimate" placeholder="新估價單號碼" value="">
+                    </div>
+                    <div><button class="main-btn ml-auto mt-3">複製</button></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="current">現有估價單</th>
+                        </tr>
+                        <tr>
+                            <th>估價單號碼</th>
+                            <th>版本</th>
+                            <th>屋主名稱</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>2021/12</td>
+                            <td>施先生</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>2021/10</td>
+                            <td>王小姐</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>2022/08</td>
+                            <td>李小姐</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>2022/05</td>
+                            <td>陳先生</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

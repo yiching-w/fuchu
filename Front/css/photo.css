@@ -1,0 +1,80 @@
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table {
+    background: #dcc9b6;
+    border-radius: 0.2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    color: #212529;
+    margin-bottom: 0;
+}
+
+.table tbody tr.active {
+    background-color: rgba(0, 0, 0, .075);
+}
+
+tbody tr th {
+    text-align: center;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+.table tbody tr:not(.totalPrice):hover {
+    background-color: rgba(0, 0, 0, .075);
+}
+
+.table thead th:first-child {
+    background-color: #ddb892;
+    min-width: 100px;
+    text-align: center;
+    color: #333;
+}
+
+.table thead tr:first-child {
+    background: #727d71;
+    color: #fff;
+}
+
+.table td {
+    white-space: nowrap;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem 0.5rem;
+    min-width: 150px;
+    max-width: 150px;
+    border-top: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+table input,
+table select {
+    width: 100%;
+    background-color: transparent;
+}
+
+.chooseBtn {
+    border: none;
+    background-color: #0c5460;
+    color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.2rem;
+}
+
+.photoArea {
+    width: 500px;
+    height: 500px;
+    background-color: #23232322;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    vertical-align: bottom;
+}

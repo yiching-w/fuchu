@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>後台登入</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/price.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="choose.html" class="main-btn mb-5" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回系統選擇</a>
+        <div class="row appendArea">
+            <div class="text-white text-center col-12 mb-3">
+                <h3 class="mb-3">精算估價價目表</h3>
+                <button class="addBtn"><i class="fas fa-plus-circle mr-2"></i>新增種類</button>
+            </div>
+            <div class="col-md-4 mt-3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="itemTitle"><input type="text" value="桶身"></th>
+                        </tr>
+                        <tr>
+                            <th style="width:13%;">編號</th>
+                            <th>名稱</th>
+                            <th>價格</th>
+                            <th>備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><input type="text" value="WBT經典"></td>
+                            <td><input type="text" value="100"></td>
+                            <td><input type="text" value="缺貨"></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><input type="text" value="WBT經典"></td>
+                            <td><input type="text" value="100"></td>
+                            <td><input type="text" value="缺貨"></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td><input type="text" value="WBT經典"></td>
+                            <td><input type="text" value="100"></td>
+                            <td><input type="text" value="缺貨"></td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td><input type="text" value="WBT經典"></td>
+                            <td><input type="text" value="100"></td>
+                            <td><input type="text" value="缺貨"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="controlBtns">
+                    <div class="addColumnBtn"><i class="fas fa-plus-circle"></i></div>
+                    <div class="delColumnBtn"><i class="fas fa-minus-circle"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+
+        $('.addBtn').click(function () {
+            $('.appendArea').append(`<div class="col-md-4 mt-3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="itemTitle"><input type="text" value="" placeholder="輸入種類"></th>
+                        </tr>
+                        <tr>
+                            <th style="width:13%;">編號</th>
+                            <th>名稱</th>
+                            <th>價格</th>
+                            <th>備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><input type="text" value="" placeholder="輸入名稱"></td>
+                            <td><input type="text" value="" placeholder="輸入價格"></td>
+                            <td><input type="text" value="" placeholder="輸入備註"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="controlBtns">
+                    <div class="addColumnBtn"><i class="fas fa-plus-circle"></i></div>
+                    <div class="delColumnBtn"><i class="fas fa-minus-circle"></i></div>
+                </div>
+            </div>`);
+        })
+
+        $(document).on('click', '.addColumnBtn', function () {
+            let tbody = $(this).closest('.controlBtns').siblings('table').find('tbody');
+            let trLen = $(tbody).find('tr').length;
+            $(tbody).append(
+                `<tr>
+                <th>${trLen + 1}</th>
+                <td><input type="text" value=""></td>
+                <td><input type="text" value=""></td>
+                <td><input type="text" value=""></td>
+            </tr>`);
+        });
+
+        $(document).on('click', '.delColumnBtn', function () {
+            let tbody = $(this).closest('.controlBtns').siblings('table').find('tbody');
+            $(tbody).find('tr:last').remove();
+        });
+    </script>
+</body>
+
+</html>

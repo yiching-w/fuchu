@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>系統類型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/estimate.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="actuarial.html" class="main-btn mb-5" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回管理估價單</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="customer_info_card">
+                    <div class="info_title">1. 客戶基本資料輸入</div>
+                    <div class="info_content">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>屋主名稱
+                                        <input type="text" class="form-control" placeholder="屋主名稱" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>報價類別
+                                        <input type="text" class="form-control" placeholder="報價類別" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>報價日期
+                                        <input type="text" class="form-control" placeholder="報價日期" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>連絡電話
+                                        <input type="text" class="form-control" placeholder="連絡電話" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>設計師
+                                        <input type="text" class="form-control" placeholder="設計師" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>設計師助理
+                                        <input type="text" class="form-control" placeholder="設計師助理" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>房屋案名
+                                        <input type="text" class="form-control" placeholder="房屋案名" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>設計師電話
+                                        <input type="text" class="form-control" placeholder="設計師電話" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>設計師助理電話
+                                        <input type="text" class="form-control" placeholder="設計師助理電話"
+                                            value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>工地地址
+                                        <input type="text" class="form-control" placeholder="工地地址" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>總噸數
+                                        <input type="text" class="form-control" placeholder="總噸數" value="" /></label>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-center justify-content-center">
+                                <button class="main-btn">更新客戶資料</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row h-100 justify-content-between">
+                    <div class="col-12">
+                        <div class="customer_info_card">
+                            <div class="info_title">2. 選擇估價單</div>
+                            <div class="info_content">
+                                <div class="form_content">
+                                    <input class="form-control" type="text" id="choose_estimate" placeholder="估價單號碼"
+                                        value="">
+                                    <div><button class="main-btn">選擇</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer_info_card">
+                            <div class="info_title">3. 更新目前區域</div>
+                            <div class="info_content">
+                                <div class="form_content">
+                                    <input class="form-control" type="text" id="choose_estimate" placeholder="區域"
+                                        value="玄關">
+                                    <div><button class="main-btn">更新</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer_info_card">
+                            <div class="info_title">4. 更新目前折數</div>
+                            <div class="info_content">
+                                <div class="form_content">
+                                    <input class="form-control" type="text" id="choose_estimate" placeholder="折數"
+                                        value="0.8">
+                                    <div><button class="main-btn">更新</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-end"><a href="details.html" class="main-btn"
+                                style="width: fit-content;">輸入項目資訊<i class="fas fa-arrow-right ml-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

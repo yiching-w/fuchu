@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>後台登入</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+        integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.css" />
+    crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/photo.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <a href="choose.html" class="main-btn mb-5" style="width: fit-content;"><i
+                class="fas fa-arrow-left mr-2"></i>返回系統選擇</a>
+        <div class="row">
+            <div class="col-4">
+                <h3 class="text-white mb-4">管理施作月份乘數</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>施作月份</th>
+                                <th>乘數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2022/12月</td>
+                                <td><input type="text" value="1.4"></td>
+                            </tr>
+                            <tr>
+                                <td>2023/1月</td>
+                                <td><input type="text" value="1.1"></td>
+                            </tr>
+                            <tr>
+                                <td>2023/2月</td>
+                                <td><input type="text" value="1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="control_month_btns">
+                    <div class="addBtn"><i class="fas fa-plus-circle"></i></div>
+                    <div class="delBtn"><i class="fas fa-minus-circle"></i></div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 appendArea">
+                <h3 class="text-white mb-4">管理區域</h3>
+                <div class="section">
+                    <div class="itemName">
+                        <input type="text" value="玄關">
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="itemSticky" scope="col"></th>
+                                    <th scope="col" colspan="7">普通</th>
+                                    <th scope="col" colspan="7">客製</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr class="">
+                                    <th class="itemSticky">品項</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>計算公式</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="itemSticky"><input class="input" type="text" value="A1"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="control_item_btns">
+                        <div class="d-flex">
+                            <button class="addBtn mr-2"><i class="fas fa-plus"></i></button>
+                            <button class="delBtn"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="totalPrice">總價：$3000</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="itemName">
+                        <input type="text" value="玄關">
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="itemSticky" scope="col"></th>
+                                    <th scope="col" colspan="7">普通</th>
+                                    <th scope="col" colspan="7">客製</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr class="">
+                                    <th class="itemSticky">品項</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>計算公式</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="itemSticky"><input class="input" type="text" value="A1"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="itemSticky"><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="1"></td>
+                                    <td><input class="input" type="text" value="100"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="120"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value="2"></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="control_item_btns">
+                        <div class="d-flex">
+                            <button class="addBtn mr-2"><i class="fas fa-plus"></i></button>
+                            <button class="delBtn"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="totalPrice">總價：$3000</div>
+                    </div>
+                </div>
+            </div>
+            <div><button class="addSection">新增區域</button></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            $(document).on('click', '.control_month_btns .addBtn', function () {
+                let tbody = $(this).closest('.control_month_btns').siblings('.table-responsive').find('table tbody');
+                $(tbody).append(
+                    `<tr>
+                    <td></td>
+                    <td><input type="text" placeholder="乘數"></td>
+                </tr>`);
+            });
+
+            $(document).on('click', '.control_month_btns .delBtn', function () {
+                let tbody = $(this).closest('.control_month_btns').siblings('.table-responsive').find('table tbody');
+                $(tbody).find('tr:last').remove();
+            });
+
+            $(document).on('click', '.control_item_btns .addBtn', function () {
+                let tbody = $(this).closest('.control_item_btns').siblings('.table-responsive').find('table tbody');
+                $(tbody).append(
+                    `<tr>
+                        <td class="itemSticky"><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                        <td><input class="input" type="text" value=""></td>
+                    </tr>`);
+            });
+
+            $(document).on('click', '.control_item_btns .delBtn', function () {
+                let tbody = $(this).closest('.control_month_btns').siblings('.table-responsive').find('table tbody');
+                $(tbody).find('tr:last').remove();
+            });
+
+            $('.addSection').click(function () {
+                $('.appendArea').append(`<div class="section">
+                    <div class="itemName">
+                        <input type="text" value="輸入區域">
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="itemSticky" scope="col"></th>
+                                    <th scope="col" colspan="7">普通</th>
+                                    <th scope="col" colspan="7">客製</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr class="">
+                                    <th class="itemSticky">品項</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>寬</th>
+                                    <th>高</th>
+                                    <th>深</th>
+                                    <th>層板數量</th>
+                                    <th>檯面數量</th>
+                                    <th>鉸練數量</th>
+                                    <th>吊衣桿數量</th>
+                                    <th>計算公式</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="itemSticky"><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                    <td><input class="input" type="text" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="control_item_btns">
+                        <div class="d-flex">
+                            <button class="addBtn mr-2"><i class="fas fa-plus"></i></button>
+                            <button class="delBtn"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="totalPrice">總價：$0</div>
+                    </div>
+                </div>`);
+            })
+
+            const scrollContainers = document.querySelectorAll(".table-responsive");
+
+            for (let scrollContainer of scrollContainers) {
+
+                scrollContainer.addEventListener("wheel", (evt) => {
+                    evt.preventDefault();
+                    scrollContainer.scrollLeft += evt.deltaY;
+                });
+            }
+
+            $(document).on('focus', '.input', function () {
+                $('tr').removeClass('active');
+                $(this).closest('tr').addClass('active')
+            })
+            $(document).on('focusout', '.input', function () {
+                $('tr').removeClass('active');
+            })
+        });
+    </script>
+</body>
+
+</html>
